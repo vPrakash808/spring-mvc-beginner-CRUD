@@ -24,7 +24,7 @@ public class MainController {
 	public String display(Model model) {
 		List<Product> products = productDao.getProducts();
 		model.addAttribute("products",products);
-		return "index";
+		return "index" ;
 	}
 	
 	@GetMapping("/addProduct")
